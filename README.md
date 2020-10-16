@@ -11,4 +11,5 @@ Convolutional Neural Network
 2. tensorflow
 3. tkinter
 
-https://imgflip.com/gif/4iq5to
+
+![4iq5to](https://user-images.githubusercontent.com/72820840/96260555-dcaa7800-0fc7-11eb-8a83-ee9a03bd3b37.gif)
