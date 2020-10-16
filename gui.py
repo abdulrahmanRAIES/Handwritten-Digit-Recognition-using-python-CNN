@@ -19,7 +19,7 @@ from PIL import ImageGrab, Image
 model = tf.keras.models.load_model('model') 
 
 
-def aboood(img):
+def process(img):
     images=[]
     cv2.imwrite('5.png',np.float32(img)) #SAVE THE IMAGE
     col = Image.open('5.png') # READ THE IMAGE
@@ -65,7 +65,7 @@ class App(tk.Tk):
         HWND = self.canvas.winfo_id() # get the handle of the canvas
         rect = win32gui.GetWindowRect(HWND) # get the coordinate of the canvas
         im = ImageGrab.grab(rect)
-        digit, acc = aboood(im)
+        digit, acc = process(im)
 
         self.label.configure(text= str(digit))
     def draw_lines(self, event):
